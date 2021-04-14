@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Photography Session Reservation Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<div class="container">
+  <h1 id="title">Photography Session Reservation Form</h1>
+  <p id="description">Thank you for taking the time to fill out this form.<br/>
+Your answers will help me in making this the best possible experience for you and your family!
+</p>
+  <form id="survey-form" class="form-horizontal" action="/action_page.php">
+    <div id="div-book">
+      <h2>BOOK YOUR SESSION</h2>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="name" id="name-label">Name</label>
+      <div class="col-sm-10">
+        <input type="name" class="form-control" class="input-form" id="name" placeholder="First Name" name="name" required>
+        <input type="name" class="form-control" class="input-form" id="last-name" placeholder="Last Name" name="-lastname" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email" id="email-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" class="input-form" id="email" placeholder="Enter email" name="email" required>
+      </div>
+    </div> 
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Phone Number</label>
+      <div class="col-sm-10">   
+        <input type="phone" class="form-control" class="input-form" id="area-code" placeholder="Area Code" name="phone" required>
+        <input type="phone" class="form-control" class="input-form" id="phone" placeholder="Phone number" name="phone" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="address">Address</label>
+      <div class="col-sm-10" class="color"  >
+        <input type="address" class="form-control" class="input-form" id="address" placeholder="Street Address" name="address" required>
+        <input type="city" class="form-control" class="input-form" id="city" placeholder="City" name="city" required>
+        <input type="country" id="country" class="form-control" placeholder="Country" name="country" required>
+      </div>
+    </div>
+    <div id="number-people">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="number" id="number-label">Number of People in Session</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" class="input-form" id="number" name="quantity" min="1" max="10"placeholder="Number" required>
+      </div>
+    </div> 
+    </div>
+    <div id="select-div"class="form-group">
+      <label class="control-label col-sm-2" for="select">Type of session</label>
+      <div class="col-sm-10">
+        <select  id="dropdown" class="form-control" required>
+        <option disabled selected value class>Select current role</option>
+        <option>Newborn session</option>
+        <option>Senior session</option>
+        <option>Engagement or Couple session</option>
+        <option>Family session</option>
+        <option>Maternity session</option>
+      </select>
+      </div>
+    </div> 
+    <div id="loc-radio" class="form-group">
+     <label class="control-label col-sm-2" for="location" >Location</label>
+   <form>
+     <div id="location">
+  <div class="radio">
+      <label><input type="radio" id="option-1"name="optradio" value="option-1"checked>
+I'd like the photographer to give me suggestions</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" id="option-2" name="optradio" value="option-2">I'd like the photographer to choose</label>
+    </div>
+    <div class="radio disabled">
+      <label><input type="radio" id="option-3" name="optradio" value="option-3">I have a preferred location </label>
+    </div>
+   </div>
+     </div>
+     <div id="checkbox" class="form-group">
+      <label class="control-label col-sm-2" for="location" class="loc">Types of locations </label>
+     <div class="location">
+        <div class="checkbox">
+          <label><input type="checkbox" value="Nature Parks">Nature Parks</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="Rustic Buildings">Rustic Buildings</label>
+        </div>
+    <div class="checkbox">
+          <label><input type="checkbox" value="Nature Tall grass">Nature Tall grass</label>
+        </div>
+  <div class="checkbox">
+          <label><input type="checkbox" value="Urban/City">Urban/City</label>
+        </div>
+<div class="checkbox">
+          <label><input type="checkbox" value="other"><input type="text" class="form-control" id="other" placeholder="Other" name="other" required></label>
+        </div>
+      </div>
+     </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+  <label for="comment" id="comment-label">Note to Photographer</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+</div>
+    <div class="form-group">   
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default" id="submit">Submit</button>
+      </div>
+    </div>
+      </form>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
